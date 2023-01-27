@@ -1,0 +1,35 @@
+.jobs{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    &_img{
+width: 666px;
+height: 666px;
+    }
+    &_card{
+        width: 666px;
+        height: 666px;
+        background-color: rgb(119, 175, 236);
+        padding: 190px 133px;
+        &_h4{
+font-size: 30px;
+        }
+        &_span{
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            &_i{
+font-size: 30px;
+            }
+            &_a{
+font-size: 23px;
+// font-weight: 300;
+
+
+            }
+        }
+    }
+    &_hr{
+        margin-top: 100px;
+    }
+}

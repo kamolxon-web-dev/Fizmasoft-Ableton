@@ -1,0 +1,26 @@
+.intro_nav{
+    position: sticky;
+  
+    height: 70px;
+    background-color: #ffa;
+   display: flex;
+   width: 100%;
+   align-items: center;
+   &_ul{
+    position:sticky ;
+    width: 16%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+   
+    &_li{
+       
+        font-size: 15px;
+font-weight: 500;
+    }
+   }
+}
+.orange{
+    color: rgb(218, 145, 18);
+
+}

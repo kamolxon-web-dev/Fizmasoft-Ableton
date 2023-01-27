@@ -1,0 +1,28 @@
+.intro{
+ width:85%;
+//  height: 85vh;
+ background: #000;
+ margin: auto;
+ 
+    &_h2{
+color: red;
+font-size: 100px;
+display: flex;justify-content: center;
+padding-top: 300px;
+
+    }
+}
+.img{
+    
+    background-image: url("https://ableton-production.imgix.net/about/header.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=306&ixjsv=1.1.3&q=50&w=893");
+    background-size: cover;
+    // background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+}
+@media only screen and(max-width:768px){
+    .intro_h2{
+        font-size: 60px;
+    }
+    
+}
