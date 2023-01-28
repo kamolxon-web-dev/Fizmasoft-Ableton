@@ -32,6 +32,7 @@
         &_a {
           margin: 0;
           padding: 0;
+          color: rgb(23, 22, 22);
         }
       }
     }
@@ -44,9 +45,11 @@
       margin-left: 32%;
       &_li {
         font-weight: 500;
+        color: black;
 
         &_a {
           text-decoration: none;
+          color: black;
         }
       }
     }

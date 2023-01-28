@@ -351,6 +351,7 @@ a {
 .header_nav_ul_li_a {
   margin: 0;
   padding: 0;
+  color: rgb(23, 22, 22);
 }
 .header_nav_span {
   width: 336px;
@@ -360,9 +361,11 @@ a {
 }
 .header_nav_span_li {
   font-weight: 500;
+  color: black;
 }
 .header_nav_span_li_a {
   text-decoration: none;
+  color: black;
 }
 
 .try {
@@ -712,6 +715,7 @@ a {
 }
 
 .footer {
+  color: black;
   margin-top: 100px;
 }
 .footer_new_line {
@@ -734,6 +738,7 @@ a {
   margin-top: 10px;
 }
 .footer_ul_li_icons_a {
+  color: black;
   padding: 4px;
   margin-left: 4px;
 }
@@ -742,6 +747,7 @@ a {
   color: aliceblue;
 }
 .footer_ul_two_li {
+  color: black;
   margin-top: 5px;
   display: flex;
   align-items: center;
@@ -750,6 +756,7 @@ a {
   width: 533px;
 }
 .footer_ul_three_li_p {
+  color: black;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -780,6 +787,7 @@ a {
   margin-top: 70px;
 }
 .footer_two_ul_one_li {
+  color: black;
   margin-top: 10px;
 }
 .footer_two_ul_two {
@@ -787,6 +795,7 @@ a {
 }
 .footer_two_ul_two_li {
   margin-top: 10px;
+  color: black;
 }
 .footer_two_ul_three {
   margin-right: -20px;
@@ -818,6 +827,7 @@ a {
   justify-content: space-between;
 }
 .footer_last_ul_li {
+  color: black;
   font-size: 14px;
   font-weight: 550;
 }
@@ -826,6 +836,7 @@ a {
   align-items: center;
 }
 .footer_last_span_li {
+  color: black;
   font-size: 15px;
   font-weight: 550;
 }
