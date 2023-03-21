@@ -1,0 +1,74 @@
+{
+  "task": [
+    {
+      "title": "kamolbek",
+      "desc": "nosirov",
+      "date": "2023-03-01",
+      "id": 1
+    }
+  ],
+  "login": [
+    {
+      "loginName": "dasd",
+      "loginPassword": "dad",
+      "id": 1
+    },
+    {
+      "loginName": "as",
+      "loginPassword": "as",
+      "id": 2
+    },
+    {
+      "loginName": "salom",
+      "loginPassword": "kamolooxon",
+      "id": 3
+    },
+    {
+      "loginName": "kamol",
+      "loginPassword": "nosirov",
+      "id": 4
+    },
+    {
+      "loginName": "kamolbek",
+      "loginPassword": "12345",
+      "id": 5
+    },
+    {
+      "loginName": "asadbek",
+      "loginPassword": "12345",
+      "id": 6
+    }
+  ],
+  "jobs": [
+    {
+      "name": "asdad",
+      "img": "C:\\fakepath\\photo-7.jpg",
+      "surname": "asdasdas",
+      "number": "dasdasda",
+      "email": "23232",
+      "about": "232",
+      "birthday": "2323-03-23",
+      "id": 1
+    },
+    {
+      "name": "kamolxon",
+      "img": "C:\\fakepath\\20230128_231559.jpg",
+      "surname": "nosirov",
+      "number": "123456789",
+      "email": "kamolx@gamil.com",
+      "about": "men uzbekman",
+      "birthday": "2023-03-19",
+      "id": 2
+    },
+    {
+      "name": "nosirov",
+      "img": "C:\\fakepath\\20230307_111737.jpg",
+      "surname": "nosirov",
+      "number": "1321323424",
+      "email": "kamolxon@gmail.com",
+      "about": "men kamolbekman",
+      "birthday": "2023-03-08",
+      "id": 3
+    }
+  ]
+}

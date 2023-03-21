@@ -1,7 +1,8 @@
 .belive {
  max-width: 800px;
-  height: 275px;
+  
   margin: auto;
+  padding: 20px;
   margin-top: 180px;
   &_h4 {
     font-size: 25px;
@@ -13,11 +14,22 @@
   }
 }
 .imgs3{
-    width: 1400px;
-    height: 800px;
+    width: 90%;
+    max-height: 75vh;
 
 }
 .img3{
-    margin-top: 100px;
+  max-width: 96%;
+    // margin-top: 100px;
   text-align: center;  
 }
+@media only screen and (max-width:443px) {
+.imgs3{
+  // margin-top: 100px;
+}
+}
+@media only screen and (max-width:532px) {
+  .imgs3{
+    margin-top: 30px;
+  }
+  }

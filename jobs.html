@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/jobsget.css" />
+    <title>Document</title>
+  </head>
+  <body>
+  
+
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <h3 class="modal_body_h3">Qabul qilindi 👍🏽</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="jobs mx-auto p-3 border mt-4">
+      <h3 class="text-center mb-4">It's Your Space</h3>
+      <div class="mb-3">
+        <strong for="jobsName" class="form-label">Enter your name</strong>
+        <input
+          required
+          type="email"
+          class="form-control p-2 my-2"
+          id="jobsName"
+          placeholder="enter youtr Surname"
+        />
+      </div>
+      <div class="mb-3">
+        <strong for="jobsImg" class="form-label">Enter your Name</strong>
+        <input
+          accept="image/jpg, image/png"
+          required
+          type="file"
+          class="form-control p-3 my-2"
+          id="jobsImg"
+          placeholder="Enter your name"
+        />
+        <div class="display_img"></div>
+      </div>
+      <div class="mb-3">
+        <strong for="jobsSurname" class="form-label">Enter your Surname</strong>
+        <input
+          required
+          type="email"
+          class="form-control p-2 my-2"
+          id="jobsSurname"
+          placeholder="enter youtr Surname"
+        />
+      </div>
+      <div class="mb-3">
+        <strong for="jobsSurname" class="form-label">Enter your phone number</strong>
+        <input
+          required
+          type="email"
+          class="form-control p-2 my-2"
+          id="jobsNumber"
+          placeholder="enter your Number"
+        />
+      </div>
+      <div class="mb-3">
+        <strong for="jobsBirthday" class="form-label"
+          >Enter your Birthday</strong
+        >
+        <input
+          required
+          type="date"
+          class="form-control p-2 my-2"
+          id="jobsBirthday"
+          placeholder="Enter your Birthday"
+        />
+      </div>
+      <div class="mb-3">
+        <strong for="jobsEmail" class="form-label">Email address</strong>
+        <input
+          required
+          type="email"
+          class="form-control p-2 my-2"
+          id="jobsEmail"
+          placeholder="name@example.com"
+        />
+      </div>
+      <div class="mb-3">
+        <strong for="jobsAbout"> Fully about yourself</strong>
+        <textarea
+          required
+          class="form-control p-2 my-2"
+          id="jobsAbout"
+          rows="3"
+        ></textarea>
+      </div>
+      <button class="btn btn-info w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+    </div>
+  </body>
+  <script src="./script/utilist.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="./script/jobs.js"></script>
+</html>

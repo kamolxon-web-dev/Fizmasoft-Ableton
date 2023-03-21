@@ -1,35 +1,188 @@
-.jobs{
-    display: flex;
+.jobs {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  &_img {
+    width: 666px;
+    height: 666px;
+  }
+  &_card {
+    width: 666px;
+    height: 666px;
+    background-color: rgb(119, 175, 236);
+    padding: 190px 133px;
+    &_h4 {
+      font-size: 30px;
+    }
+    &_span {
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+      &_i {
+        font-size: 30px;
+      }
+      &_a {
+        font-size: 23px;
+        // font-weight: 300;
+      }
+    }
+  }
+  &_hr {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .jobs {
+    display: block;
     justify-content: center;
     margin-top: 100px;
-    &_img{
-width: 666px;
-height: 666px;
+    margin: auto;
+    text-align: center;
+    &_img {
+      width: 600px;
+      height: 300px;
     }
-    &_card{
-        width: 666px;
-        height: 666px;
-        background-color: rgb(119, 175, 236);
-        padding: 190px 133px;
-        &_h4{
-font-size: 30px;
+    &_card {
+      width: 600px;
+      height: 300px;
+      background-color: rgb(119, 175, 236);
+      padding: 80px 35px;
+      margin: auto;
+      &_h4 {
+        font-size: 22px;
+      }
+      &_span {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        justify-content: center;
+        &_i {
+          font-size: 30px;
         }
-        &_span{
-            display: flex;
-            align-items: center;
-            margin-top: 50px;
-            &_i{
-font-size: 30px;
-            }
-            &_a{
-font-size: 23px;
-// font-weight: 300;
-
-
-            }
+        &_a {
+          font-size: 23px;
+          // font-weight: 300;
         }
+      }
     }
-    &_hr{
-        margin-top: 100px;
+    &_hr {
+      margin-top: 100px;
     }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .jobs {
+    display: block;
+    justify-content: center;
+    margin-top: 100px;
+    margin: auto;
+    text-align: center;
+    &_img {
+      width: 500px;
+      height: 300px;
+    }
+    &_card {
+      width: 500px;
+      height: 300px;
+      background-color: rgb(119, 175, 236);
+      padding: 80px 35px;
+      margin: auto;
+      &_h4 {
+        font-size: 22px;
+      }
+      &_span {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        justify-content: center;
+        &_i {
+          font-size: 30px;
+        }
+        &_a {
+          font-size: 23px;
+          // font-weight: 300;
+        }
+      }
+    }
+    &_hr {
+      margin-top: 100px;
+    }
+  }
+
+}
+@media only screen and (max-width: 550px) {
+  .jobs {
+    display: block;
+    justify-content: center;
+    margin-top: 100px;
+    margin: auto;
+    text-align: center;
+    &_img {
+      width: 400px;
+      height: 300px;
+    }
+    &_card {
+      width: 400px;
+      height: 300px;
+      background-color: rgb(119, 175, 236);
+      padding: 80px 35px;
+      margin: auto;
+      &_h4 {
+        font-size: 22px;
+      }
+      &_span {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        justify-content: center;
+        &_i {
+          font-size: 30px;
+        }
+        &_a {
+          font-size: 23px;
+        }
+      }
+    }
+    &_hr {
+      margin-top: 100px;
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .jobs {
+    display: block;
+    justify-content: center;
+    margin-top: 100px;
+    margin: auto;
+    text-align: center;
+    &_img {
+      width: 300px;
+      height: 300px;
+    }
+    &_card {
+      width: 300px;
+      height: 300px;
+      background-color: rgb(119, 175, 236);
+      padding: 80px 35px;
+      margin: auto;
+      &_h4 {
+        font-size: 18px;
+      }
+      &_span {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        justify-content: center;
+        &_i {
+          font-size: 30px;
+        }
+        &_a {
+          font-size: 23px;
+        }
+      }
+    }
+    &_hr {
+      margin-top: 100px;
+    }
+  }
 }

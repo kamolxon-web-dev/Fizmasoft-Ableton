@@ -1,0 +1,17 @@
+@media only screen and (max-width: 440px) {
+  .table {
+    font-size: 11px;
+  }
+  table .btn {
+    font-size: 11px;
+  }
+  input {
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 333px) {
+  table .btn {
+    text-align: center;
+    width: 34px;
+  }
+}

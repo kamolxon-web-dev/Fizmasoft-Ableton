@@ -2,13 +2,12 @@
     position: sticky;
   
     height: 70px;
-    // background-color: #ffa;
    display: flex;
    width: 100%;
    align-items: center;
    &_ul{
     position:sticky ;
-    width: 16%;
+    width: 19%;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -17,10 +16,21 @@
        
         font-size: 15px;
 font-weight: 500;
+
     }
    }
 }
 .orange{
     color: rgb(218, 145, 18);
 
+}
+.intro_nav_ul_li a{
+    color: #000;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:1275px) {
+    .intro_nav_ul{
+width: 95%;
+    }
 }

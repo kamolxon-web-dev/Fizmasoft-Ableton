@@ -1,15 +1,14 @@
-.making{
-    max-width: 800px;
-    min-height: 165px;
+.making {
+  max-width: 800px;
+  min-height: 165px;
   padding: 20px;
   margin: auto;
   margin-top: 100px;
-//    background-color: #ffa;
-    &_h4{
-        font-size: 26px;
-    }
-    &_p{
-        margin-top: 21px;
-font-size: 17px;
-    }
+  &_h4 {
+    font-size: 26px;
+  }
+  &_p {
+    margin-top: 21px;
+    font-size: 17px;
+  }
 }

@@ -1,22 +1,134 @@
-.intro{
- width:85%;
-//  height: 85vh;
- background: #000;
- margin: auto;
- 
-    &_h2{
-color: red;
-font-size: 100px;
-display: flex;justify-content: center;
-padding-top: 300px;
-
-    }
+body {
+  position: absolute;
 }
-.img{
-    
-    background-image: url("https://ableton-production.imgix.net/about/header.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=306&ixjsv=1.1.3&q=50&w=893");
-    background-size: cover;
-    // background-repeat: no-repeat;
-    background-position: center;
-    height: 85vh;
+.intro {
+  width: 85%;
+  margin: auto;
+  overflow-x: hidden;
+
+  &_h2 {
+    color: red;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+  }
+}
+.menu {
+  position: relative;
+  position: absolute;
+
+  width: 150px;
+  height: 100px;
+  background-color: rgb(191, 190, 197);
+  left: 170px;
+  top: 30px;
+  z-index: 3;
+}
+.menu_ul {
+  padding-left: 0px;
+}
+
+.menu_ul_li {
+  text-align: center;
+
+  padding: 10px 4px;
+  margin-top: 7px;
+  background-color: rgba(186, 181, 186, 0.667);
+  color: azure;
+}
+.menu_ul_li a {
+  text-decoration: none;
+  color: black;
+}
+.d-none {
+  display: none;
+}
+.imgsd1 {
+  background-image: url("https://ableton-production.imgix.net/about/header.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=306&ixjsv=1.1.3&q=50&w=893");
+  background-size: cover;
+
+  background-position: center;
+  //   height: 85vh;
+  width: 100% !important;
+  height: 800px;
+}
+.imgsd2 {
+  background-image: url("../../images/mack.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100% !important;
+  height: 800px;
+}
+.imgsd3 {
+  background-image: url("https://media.istockphoto.com/id/1346143621/photo/positive-young-mixed-race-woman-using-a-laptop-and-smartphone-at-home-cozy-home-interior-with.jpg?s=612x612&w=0&k=20&c=o92yS8xrYMIgAOwq6VpVU713mS2wpLa5-1bBRgysHU4=");
+  background-size: cover;
+  background-position: center;
+  width: 100% !important;
+  height: 800px;
+}
+
+.slider {
+  display: inline-flex;
+  transition: 0.5s ease;
+}
+
+.controller {
+  width: 1px;
+  height: 240px;
+  display: block;
+  background: #ad1d1d;
+  position: absolute;
+  top: 55%;
+  right: 55px;
+  transform: translateY(-50%);
+}
+#line1,
+#line2,
+#line3 {
+  height: 80px;
+  width: 10px;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+#active {
+  height: 80px;
+  width: 5px;
+  border-radius: 10px;
+  background: #bcb9b9;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  transition: 0.5s ease;
+}
+.imgsd1_wrapper {
+  width: 1500px;
+  margin: auto;
+}
+.imgsd2_wrapper {
+  width: 1500px;
+  margin: auto;
+}
+.imgsd3_wrapper {
+  width: 1500px;
+  margin: auto;
+}
+.intro_container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro_h2 {
+    font-size: 60px;
+  }
+  .imgsd1{
+    height: 500px;
+  }
+  .imgsd2{
+    height: 500px;
+  }
+  .imgsd3{
+    height: 500px;
+  }
 }

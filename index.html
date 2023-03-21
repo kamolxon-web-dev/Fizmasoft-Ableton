@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Connect to Min Css -->
     <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <!-- Boxicons CSS -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/more.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,68 +31,150 @@
     <title>Ableton</title>
   </head>
   <body>
+    <!-- login modal start -->
+    
+               <!-- <div class="card_wrapper d-none ">
+                <div class="card">
+                  <h2 class="card_h2 text-center">Login page</h2>
+                  <form class="login_form">
+                    <label for="usertitle" class="w-100">
+                      <strong class="text-left"> Enter your usernmae</strong>
+                      <input
+                      id="usertitle"
+                        type="text"
+                        class="form-control p-3 my-3"
+                        placeholder="Enter task title"
+                      />
+                    
+                      
+                    </label>
+                    <label for="userpassword" class="w-100 password">
+                      <strong class="text-left"> Enter your usernmae</strong>
+                      <input
+                      id="userpassword"
+                        type="password"
+                        class="form-control p-3 my-3"
+                        placeholder="Enter task title"
+                      />
+                      <i class="bi eye bi-eye"></i>
+                    </label>
+                    <button  class="btn p-2 btn-success w-100">login</button>
+                  </form>
+                
+                </div>
+              </div> -->
+          
+    <!-- login modal end -->
+    <div class="top">
+      <i class="bx bx-arrow-to-top"></i>
+    </div>
     <!-- Header Nav start -->
     <header class="header">
       <div class="header_nav_container">
+        <!-- LOG  OUT ADMIN DASHBORD -->
+        <div class="menu d-none">
+          <ul class="menu_ul">
+            <li class="menu_ul_li">
+              <a href="./login.html" target="_blank">Log Out</a>
+            </li>
+            <li class="menu_ul_li">
+              <a href="./admin.html" target="_blank">Admin Panel</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Header menu SM -->
+      <div class="header_nav_container">
+        <div class="menu_tel">
+          <div class="menu_sm">
+            <div class="menu_sm_ul">
+              <li class="menu_sm_ul_li_x">
+                <i class="bx bx-x menu_sm_x"></i>
+              </li>
+              <li class="menu_sm_ul_li">
+                <a href="#home">Home</a>
+              </li>
+              <li class="menu_sm_ul_li">
+                <a href="#link">Link</a>
+              </li>
+              <li class="menu_sm_ul_li">
+                <a href="#images">Image</a>
+              </li>
+              <li class="menu_sm_ul_li">
+                <a href="#video">Video</a>
+              </li>
+              <li class="menu_sm_ul_li">
+                <a href="#jobss">Jobs</a>
+              </li>
+              <li class="menu_sm_ul_li">
+                <a href="#footers">Contact</a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- header start -->
         <nav class="header_nav">
           <ul class="header_nav_ul">
             <a class="header_nav_ul_logo" href="#">
-              <i class="bx bx-list-ul header_nav_ul_logo_i"></i>
+              <i class="bx hamburger bx-list-ul header_nav_ul_logo_i"></i>
             </a>
             <li class="down">
-              <p class="down_p">Menu</p>
-              <i class="bx bxs-down-arrow down_i"></i>
+              <p class="down_p">Ableton</p>
             </li>
 
             <li class="header_nav_ul_li none">
-              <a class="header_nav_ul_li_a" href="#">Live</a>
+              <a class="header_nav_ul_li_a" href="#home">Home</a>
             </li>
             <li class="header_nav_ul_li none">
-              <a class="header_nav_ul_li_a" href="#">Push</a>
+              <a class="header_nav_ul_li_a" href="#link">Link</a>
             </li>
             <li class="header_nav_ul_li none">
-              <a class="header_nav_ul_li_a" href="#">Note</a>
+              <a class="header_nav_ul_li_a" href="#images">Image</a>
             </li>
             <li class="header_nav_ul_li none">
-              <a class="header_nav_ul_li_a" href="#">Link</a>
+              <a class="header_nav_ul_li_a" href="#video">Video</a>
             </li>
             <li class="header_nav_ul_li none">
-              <a class="header_nav_ul_li_a" href="#">Shop</a>
+              <a class="header_nav_ul_li_a" href="#team">Team</a>
             </li>
             <li class="header_nav_ul_li none">
-              <a class="header_nav_ul_li_a" href="#">Packs</a>
+              <a class="header_nav_ul_li_a" href="#more">More+</a>
             </li>
             <li class="header_nav_ul_li none">
-              <a class="header_nav_ul_li_a" href="#">Help</a>
+              <a class="header_nav_ul_li_a" href="#jobss">Jobs</a>
             </li>
             <li class="header_nav_ul_li none">
-              <a class="header_nav_ul_li_a orenge" href="#">More+</a>
+              <a class="header_nav_ul_li_a orenge" href="#footers" id="footer">Contact</a>
             </li>
           </ul>
           <span class="header_nav_span none">
             <li class="header_nav_span_li">
-              <a class="header_nav_span_li_a try" href="#">Try Live for free</a>
+              <a class="header_nav_span_li_a try username" href="#">Username</a>
             </li>
-            <li class="header_nav_span_li">
-              <a class="header_nav_span_li_a log" href="#"
-                >log in or register</a
-              >
+            <li class="header_nav_span_li log">
+              <a href="./login.html" target="_blank"
+                class="header_nav_span_li_a  "
+         
+                >log in or register</a>
             </li>
           </span>
+          <li class="hamburger_sm">
+            <i class="bx bx-list-ul"></i>
+          </li>
         </nav>
       </div>
       <hr />
       <nav class="intro_nav header_nav_container">
         <ul class="intro_nav_ul">
           <li class="intro_nav_ul_li">
-            <a href="#" style="color: orange"> About </a>
+            <a href="#video" style="color: orange" > About </a>
           </li>
           <li class="intro_nav_ul_li">
-            <a href="#">Jobs</a>
+            <a href="#jobss">Jobs or Aprentiships</a>
           </li>
-          <li class="intro_nav_ul_li">
-            <a href="#">Aprentiships</a>
-          </li>
+          
         </ul>
       </nav>
     </header>
@@ -91,16 +183,46 @@
     <main>
       <!-- INTRO statr  -->
 
-      <div class="intro">
-        <div class="img">
-          <h2 class="intro_h2">Ableton</h2>
-        </div>
+      <div class="intro intro_container" id="home">
+        <swiper-container
+          class="slider mySwiper"
+          pagination="true"
+          pagination-clickable="true"
+          navigation="true"
+          space-between="30"
+          centered-slides="true"
+          autoplay-delay="3500"
+          autoplay-disable-on-interaction="false"
+        >
+          <swiper-slide class="imgsd1_wrapper">
+            <div id="1" class="imgsd1 slider-col">
+              <h2 class="intro_h2">Ableton</h2>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="imgsd2_wrapper">
+            <div id="2" class="imgsd2 slider-col">
+              <h2 class="intro_h2">Desktop</h2>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="imgsd3_wrapper">
+            <div id="3" class="imgsd3 slider-col">
+              <h2 class="intro_h2">Developer</h2>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+        <!-- <div class="controller">
+          <div id="line1"></div>
+          <div id="line2"></div>
+          <div id="line3"></div>
+          
+          <div id="active"></div>
+        </div> -->
       </div>
 
       <!-- INTRO end -->
 
       <!-- make start -->
-      <div class="make">
+      <div class="make" id="link">
         <h4 class="make_h4">
           We make <a href="#">Live</a>, <a href="#">Push</a> and
           <a href="#">Link</a> — unique software and hardware for music creation
@@ -116,13 +238,13 @@
       <!-- Make end -->
 
       <!-- images start  -->
-      <dfn class="imgs">
+
+      <div class="images_container" id="images">
         <div class="images">
-          <img class="images_img1" src="./images/photo-1.jpg" alt="" />
-          <img class="images_img2" src="./images/photo-2.jpg" alt="" />
-          <span class="images_yellow"></span>
+          <img class="images_img" src="./images/user.png" alt="" />
         </div>
-      </dfn>
+      </div>
+
       <!-- images end -->
       <!-- Making start -->
       <div class="making">
@@ -140,10 +262,10 @@
 
       <!-- video start -->
       <!-- video start -->
-      <div class="video">
+      <div class="video" id="video">
         <div class="video_wrapper">
-          <video class="video_video" controls poster="./hqdefault.webp">
-            <source src="./fizmavideo" />
+          <video class="video_video" controls poster="./images/hqdefault.webp">
+            <source src="./images/fizmavideo" />
           </video>
         </div>
 
@@ -170,12 +292,19 @@
         </p>
       </div>
       <!-- peopole end -->
+
       <!-- pictures start -->
-      <div class="pictures">
+      <div class="pictures pictures_container" id="team">
         <div class="pictures_div"></div>
-        <img class="pictures_img_1" src="./images/photo-3.jpg" alt="" />
-        <img class="pictures_img_2" src="./images/photo-4.jpg" alt="" />
-        <img class="pictures_img_3" src="./images/photo-5.jpg" alt="" />
+        <div class="img1">
+          <img class="pictures_img_1" src="./images/photo-3.jpg" alt="" />
+        </div>
+        <div class="img2">
+          <img class="pictures_img_2" src="./images/photo-4.jpg" alt="" />
+        </div>
+        <div class="img3">
+          <img class="pictures_img_3" src="./images/photo-5.jpg" alt="" />
+        </div>
       </div>
       <!-- pictures end -->
 
@@ -187,18 +316,22 @@
         </h4>
         <p class="belive_p">
           Rather than having a one-size-fits-all process, we try to give our
-          people what they need to work their magic and grow. We’ve learned that
-          achieving the best results comes from building teams that are richly
-          diverse, and thus able to explore problems from a wider set of
-          perspectives. We don’t always agree with each other, but opinion and
+          people what they need to work their magic and grow. We have learned
+          that achieving the best results comes from building teams that are
+          richly diverse, and thus able to explore problems from a wider set of
+          perspectives. We do not always agree with each other, but opinion and
           debate are valued and openly encouraged.
         </p>
       </div>
       <!-- belive end -->
-      <!-- picture -->
-      <div class="img3">
-        <img class="imgs3" src="./images/poster.avif" alt="" />
+
+      <!-- picture start -->
+      <div class="img3_container">
+        <div class="img3">
+          <img class="imgs3" src="./images/poster.avif" alt="" />
+        </div>
       </div>
+      <!-- picture end -->
 
       <!-- passi start -->
 
@@ -223,10 +356,8 @@
       <!-- passi end -->
 
       <!-- works start -->
-      <div class="works">
-        <div class="works_img_1">
-          <!-- <img src="./images/photo-7.jpg" alt=""> -->
-        </div>
+      <div class="works works_container" id="work">
+        <div class="works_img_1"></div>
         <div class="works_div"></div>
         <div class="works_img_3"></div>
       </div>
@@ -236,163 +367,201 @@
 
       <div class="want">
         <h4 class="want_h4">
-          We want our employees to love it here. Since we’re looking for
+          We want our employees to love it here. Since we are looking for
           exceptional talent from around the world, we will do everything we can
           to make your transition as easy as possible.
         </h4>
         <p class="want_p">
           If you're joining us in Berlin, we'll help with relocation and
-          paperwork. We’ll even provide you with free German or English lessons.
-          Plus, working in Germany means you can expect comprehensive health
-          insurance for you and your family, as well as generous maternity and
-          paternity leave. Office hours are flexible, but it’s not all work; we
-          have several company and team outings throughout the year as well as a
-          variety of fun, informal small-group activities.
+          paperwork. We well even provide you with free German or English
+          lessons. Plus, working in Germany means you can expect comprehensive
+          health insurance for you and your family, as well as generous
+          maternity and paternity leave. Office hours are flexible, but it is
+          not all work; we have several company and team outings throughout the
+          year as well as a variety of fun, informal small-group activities.
         </p>
       </div>
       <!-- want end -->
-      <!-- JObs start  -->
 
-      <div class="jobs">
-        <img class="jobs_img" src="./images/photo-8.jpg" alt="" />
+      <!-- Jobs start  -->
+
+      <div class="jobs" id="jobss">
+        <div class="jobs_img_div">
+          <img class="jobs_img" src="./images/photo-8.jpg" alt="" />
+        </div>
         <div class="jobs_card">
           <h4 class="jobs_card_h4">
             We’re really proud of the work we’ve done so far. But there’s so
             much more to come. If you’d like to be a part of it, please join us.
           </h4>
           <span class="jobs_card_span">
-            
-            <a class="jobs_card_span_a" href="#">See latest jobs</a>
+            <a class="jobs_card_span_a" href="./jobs.html">See latest jobs</a>
             <i class="jobs_card_span_i bx bx-chevron-right"></i>
-         
           </span>
         </div>
       </div>
       <hr class="jobs_hr" />
       <!-- JOBS END -->
-
-      <!-- footer start😳 -->
-      <footer class="footer">
-        <div class="">
-          <h3 class="footer_h3">Ableton</h3>
-
-          <div class="footer_new_line footer_container">
-            <ul class="footer_ul">
-              <li class="footer_ul_li">
-                <a href="">Register Live or Push</a>
-                <i class="bx bx-chevron-right"></i>
-              </li>
-              <li class="footer_ul_li">
-                <a href="">About Ableton</a>
-                <i class="bx bx-chevron-right"></i>
-              </li>
-              <li class="footer_ul_li">
-                <a href="#">Jobs</a>
-                <i class="bx bx-chevron-right"></i>
-              </li>
-              <li class="footer_ul_li_icons">
-                <a class="footer_ul_li_icons_a blue" href="#">
-                  <i class="footer_ul_li_icons_a_i bx bxl-facebook-circle"></i>
-                </a>
-
-                <a class="footer_ul_li_icons_a bluet" href="#">
-                  <i class="footer_ul_li_icons_a_i bx bxl-twitter"></i>
-                </a>
-                <a class="footer_ul_li_icons_a red" href="#">
-                  <i class="footer_ul_li_icons_a_i bx bxl-youtube"></i>
-                </a>
-                <a class="footer_ul_li_icons_a orange" href="#">
-                  <i class="footer_ul_li_icons_a_i bx bxl-instagram"></i>
-                </a>
-              </li>
-            </ul>
-            <ul class="footer_ul_two">
-              <li class="footer_ul_two_li"><strong>Education</strong></li>
-              <li class="footer_ul_two_li">
-                <a href="">Offers for students and teachers</a>
-                <i class="bx bx-chevron-right"></i>
-              </li>
-              <li class="footer_ul_two_li">
-                <a href="">Ableton for the Classroom </a>
-                <i class="bx bx-chevron-right"></i>
-              </li>
-              <li class="footer_ul_two_li">
-                <a href="">Ableton for Colleges and Universities </a>
-                <i class="bx bx-chevron-right"></i>
-              </li>
-            </ul>
-            <ul class="footer_ul_three">
-              <li class="footer_ul_three_li">
-                <strong> Sign up to our newsletter</strong>
-              </li>
-              <li class="footer_ul_three_li">
-                <p class="footer_ul_three_li_p">
-                  Enter your email address to stay up to date with the latest
-                  offers, tutorials, downloads, surveys and more.
-                </p>
-              </li>
-              <li class="footer_ul_three_input">
-                <input
-                  placeholder="Email Address"
-                  class="footer_ul_three_input_input"
-                  type="text"
-                />
-                <button class="footer_ul_three_input_button">Sign up</button>
-              </li>
-            </ul>
+     <div class="more_container">
+        <div class="faq" id="more">
+          <div class="question">
+            <h3 class="h3">what is javascript</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroce-linecap="round"
+              />
+            </svg>
           </div>
-          <div class="footer_two">
-            <ul class="footer_two_ul_one">
-              <li class="footer_two_ul_one_li">
-                <strong>Community</strong>
-              </li>
-              <li class="footer_two_ul_one_li">
-                <a href="#"> Find Ableton User Groups </a>
-                <i class="bx bx-chevron-right"></i>
-              </li>
-              <li class="footer_two_ul_one_li">
-                <a href="#"> Find Certified Training </a>
-                <i class="bx bx-chevron-right"></i>
-              </li>
-              <li class="footer_two_ul_one_li">
-                <a href="#"> Become a Certified Trainer </a>
-                <i class="bx bx-chevron-right"></i>
-              </li>
-            </ul>
-            <ul class="footer_two_ul_two">
-              <li class="footer_two_ul_two_li">
-                <strong>Distributors</strong>
-              </li>
-              <li class="footer_two_ul_two_li">
-                <a href="#">Find Distributors</a>
-                <i class="bx bx-chevron-right"></i>
-              </li>
-              <li class="footer_two_ul_two_li">
-                <a href="#">Try Push in-store</a>
-                <i class="bx bx-chevron-right"></i>
-              </li>
-            </ul>
-            <ul class="footer_two_ul_three">
-              <h5 class="footer_two_ul_three_h5">Language and Location</h5>
-              <div class="footer_two_ul_three_location">
-                <select
-                  class="footer_two_ul_three_location_select_one"
-                  name="language"
-                  id=""
-                >
-                  <option value="">language</option>
-                </select>
-                <select
-                  class="footer_two_ul_three_location_select_two"
-                  name=""
-                  id=""
-                >
-                  <option value="">united states</option>
-                </select>
-              </div>
-            </ul>
+          <div class="answer">
+            <p class="p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              laudantium tempore doloremque autem ullam magni iste. Ut ea at
+              corrupti, exercitationem doloribus recusandae, quia sed nobis
+              perspiciatis accusantium tempora voluptate.
+            </p>
           </div>
         </div>
+        <div class="faq">
+          <div class="question">
+            <h3 class="h3">what is Ableton</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroce-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="answer">
+            <p class="p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              laudantium tempore doloremque autem ullam magni iste. Ut ea at
+              corrupti, exercitationem doloribus recusandae, quia sed nobis
+              perspiciatis accusantium tempora voluptate.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+            <h3 class="h3">How use ableton?</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroce-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="answer">
+            <p class="p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              laudantium tempore doloremque autem ullam magni iste. Ut ea at
+              corrupti, exercitationem doloribus recusandae, quia sed nobis
+              perspiciatis accusantium tempora voluptate.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+            <h3 class="h3">How to get a job?</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroce-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="answer">
+            <p class="p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              laudantium tempore doloremque autem ullam magni iste. Ut ea at
+              corrupti, exercitationem doloribus recusandae, quia sed nobis
+              perspiciatis accusantium tempora voluptate.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- footer start😳 -->
+      <footer class="footer" id="footers">
+        <div class="h3_wrapper">
+          <h3 class="footer_h3">Ableton</h3>
+        </div>
+
+        <div class="footer_new_line footer_container">
+          <!-- footer ul one 1-line -->
+          <ul class="footer_ul">
+            <li class="footer_ul_li">
+              <a href="">Register Live or Push</a>
+              <i class="bx bx-chevron-right"></i>
+            </li>
+            <li class="footer_ul_li">
+              <a href="">About Ableton</a>
+              <i class="bx bx-chevron-right"></i>
+            </li>
+            <li class="footer_ul_li">
+              <a href="#">Jobs</a>
+              <i class="bx bx-chevron-right"></i>
+            </li>
+            <li class="footer_ul_li_icons">
+              <a class="footer_ul_li_icons_a blue" href="#">
+                <i class="footer_ul_li_icons_a_i bx bxl-facebook-circle"></i>
+              </a>
+
+              <a class="footer_ul_li_icons_a bluet" href="#">
+                <i class="footer_ul_li_icons_a_i bx bxl-twitter"></i>
+              </a>
+              <a class="footer_ul_li_icons_a red" href="#">
+                <i class="footer_ul_li_icons_a_i bx bxl-youtube"></i>
+              </a>
+              <a class="footer_ul_li_icons_a orange" href="#">
+                <i class="footer_ul_li_icons_a_i bx bxl-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- footer ul two 1-line -->
+          <ul class="footer_ul_two">
+            <li class="footer_ul_two_li"><strong>Education</strong></li>
+            <li class="footer_ul_two_li">
+              <a href="">Offers for students and teachers</a>
+              <i class="bx bx-chevron-right"></i>
+            </li>
+            <li class="footer_ul_two_li">
+              <a href="">Ableton for the Classroom </a>
+              <i class="bx bx-chevron-right"></i>
+            </li>
+            <li class="footer_ul_two_li">
+              <a href="">Ableton for Colleges and Universities </a>
+              <i class="bx bx-chevron-right"></i>
+            </li>
+          </ul>
+          <!-- footer ul three 1-line -->
+          <ul class="footer_ul_three">
+            <li class="footer_ul_three_li">
+              <strong> Sign up to our newsletter</strong>
+            </li>
+            <li class="footer_ul_three_li">
+              <p class="footer_ul_three_li_p">Enter your email address</p>
+            </li>
+            <li class="footer_ul_three_input">
+              <input
+                placeholder="Email Address"
+                class="footer_ul_three_input_input"
+                type="text"
+              />
+              <button class="footer_ul_three_input_button">Sign up</button>
+            </li>
+          </ul>
+        </div>
+        <!-- footer pastki -->
+        <div class="footer_container_two footer_two"></div>
+
         <div class="footer_container_last">
           <div class="footer_last">
             <ul class="footer_last_ul">
@@ -405,7 +574,6 @@
             </ul>
             <span class="footer_last_span">
               <li class="footer_last_span_li">Made in Berlin</li>
-              <i class="bx bx-list-ul footer_last_span_i"></i>
             </span>
           </div>
         </div>
@@ -413,5 +581,8 @@
 
       <!-- footer end -->
     </main>
+    <script type="module" src="./script/script.js"></script>
+    <script src="./script/more.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
   </body>
 </html>

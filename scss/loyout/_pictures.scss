@@ -3,7 +3,7 @@
   width: 89%;
   // background-color: #000;
   &_div {
-    width: 1200px;
+    max-width: 1200px;
     height: 1200px;
     background-color: rgb(191, 231, 168);
     z-index: 3;
@@ -26,5 +26,240 @@
     width: 700px;
     top: 250px;
     right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .pictures {
+    position: relative;
+    width: 89%;
+    // background-color: #000;
+    &_div {
+      max-width: 1000px;
+      height: 1100px;
+      background-color: rgb(191, 231, 168);
+      z-index: 3;
+    }
+    &_img_1 {
+      position: absolute;
+      top: 100px;
+      width: 450px;
+      left: 100px;
+    }
+    &_img_2 {
+      position: absolute;
+      width: 450px;
+      height: 400px;
+      top: 600px;
+      left: 100px;
+    }
+    &_img_3 {
+      position: absolute;
+      width: 500px;
+      top: 250px;
+      right: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .pictures {
+    position: relative;
+    width: 89%;
+    // background-color: #000;
+    &_div {
+      max-width: 800px;
+      height: 1000px;
+      background-color: rgb(191, 231, 168);
+      z-index: 3;
+    }
+    &_img_1 {
+      position: absolute;
+      top: 50px;
+      width: 350px;
+      left: 50px;
+    }
+    &_img_2 {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      top: 600px;
+      left: 50px;
+    }
+    &_img_3 {
+      position: absolute;
+      width: 450px;
+      top: 250px;
+      right: 0px;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .pictures {
+    position: relative;
+    padding: -20px;
+    width: 89%;
+    margin: auto;
+    text-align: center;
+    &_div {
+      max-width: 1200px;
+      height: 950px;
+      z-index: 3;
+    }
+    &_img_1 {
+      top: 20px;
+      max-width: 300px;
+      left: 10px;
+
+      margin: auto;
+      text-align: center;
+    }
+    &_img_2 {
+      max-width: 300px;
+      height: 350px;
+      top: 570px;
+      left: 10px;
+      margin: auto;
+      text-align: center;
+    }
+    &_img_3 {
+      max-width: 400px;
+      top: 200px;
+      right: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .pictures {
+    position: relative;
+    padding: -20px;
+    width: 89%;
+    margin: auto;
+    text-align: center;
+    &_div {
+      max-width: 1200px;
+      height: 950px;
+
+      z-index: 3;
+    }
+    &_img_1 {
+      top: 20px;
+      max-width: 300px;
+      left: 10px;
+
+      margin: auto;
+      text-align: center;
+    }
+    &_img_2 {
+      max-width: 300px;
+      height: 300px;
+      top: 570px;
+      left: 10px;
+      margin: auto;
+      text-align: center;
+    }
+    &_img_3 {
+      max-width: 300px;
+      top: 260px;
+      height: 300px;
+      // right: 0px;
+      // left: 0px;
+      // margin: auto;
+      // text-align: center;
+      right: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 369px) {
+  .pictures {
+    // margin: auto;
+    position: relative;
+    padding: -20px;
+    width: 89%;
+    margin: auto;
+    text-align: center;
+    &_div {
+      max-width: 1200px;
+      height: 950px;
+      z-index: 3;
+    }
+    &_img_1 {
+      top: 20px;
+      max-width: 250px;
+      left: 10px;
+      margin: auto;
+      text-align: center;
+    }
+    &_img_2 {
+      max-width: 250px;
+      height: 250px;
+      top: 570px;
+      left: 10px;
+      margin: auto;
+      text-align: center;
+    }
+    &_img_3 {
+      max-width: 250px;
+      top: 260px;
+height: 250px;
+      right: 20px;
+    }
+  }
+}
+
+.images_container {
+  max-width: 1636px;
+  margin: auto;
+}
+.pictures_container {
+  max-width: 1636px;
+  margin: auto;
+}
+.img3_container {
+  max-width: 1517px;
+  margin: auto;
+}
+.works_container {
+  max-width: 1636px;
+  margin: auto;
+}
+.h3_wrapper {
+  max-width: 1320px;
+  margin: auto;
+}
+@media only screen and (max-width: 369px) {
+  .pictures {
+    position: relative;
+    padding: -20px;
+    width: 89%;
+    margin: auto;
+    text-align: center;
+
+    &_div {
+      max-width: 900px;
+      height: 790px;
+
+      z-index: 3;
+    }
+    &_img_1 {
+      top: 20px;
+      max-width: 230px;
+      left: 10px;
+      margin: auto;
+      text-align: center;
+    }
+    &_img_2 {
+      max-width: 230px;
+      height: 250px;
+      top: 530px;
+      left: 10px;
+      margin: auto;
+      text-align: center;
+    }
+    &_img_3 {
+      max-width: 230px;
+      top: 240px;
+      right: 20px;
+    }
   }
 }
